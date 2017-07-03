@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<title>Jivin Jazz</title>
+	<link href="images/favicon/jivinjazz.ico" rel="icon" type="image/x-icon" />
+	<link rel="stylesheet" href="css/responsive-nav.css">
+	<link rel="stylesheet" href="css/framework.css">
+	<link rel="stylesheet" href="css/about.css">
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/responsive-nav.js"></script>
+	<script>
+	    // The default label is the word "Menu". but we can use a special character to
+		// give us the "hamburger" icon.		
+		$(function(){
+			var navigation = responsiveNav(".nav-collapse", {
+			insert: "before",
+			//label: "&#8801;"
+			label: "Menu"
+			});
+		})
+    </script>
+</head>
+<body>
+	<header>
+		<div class='wrapper'>
+			<div class='header_content'>
+				<a href="index.html"><img src='images/logo/logo2.png' alt='Jivin Jazz' title='Jivin Jazz'></a>
+				<h1>Jivin&nbsp;&nbsp;Jazz &nbsp;&nbsp;<span>since 1999</span></h1>	
+			</div>	
+			
+		</div>
+		<figure >
+				<a href='#'><img src="images/unlogin.png" ></img></a>
+				<figcaption>Login</figcaption>
+		</figure>
+	</header>
+	<nav class="nav-collapse">
+		<ul class='nav_link'>
+			<li><a href='index.html'>Home</a></li>
+			<li><a href='music.html'>Music</a></li>
+			<li><a href='musician.html'>Musician</a></li>
+			<li><a href='blog.html'>Blog</a></li>
+			<li><a href='contact.html'>Contact us</a></li>
+			<li><a class='selected' href='about.html'>About us</a></li>
+		</ul>
+	</nav>
+	
+	<div id="content"  >
+		<div class="mapsite"><span> About us</span></div>
+		<div class="about">
+			<div class="about_left">
+				<div>
+					<p class="time">1999</p>					
+				</div>	
+				<div class="history">
+					<h1>GOAL</h1>
+					<p>The main goal of Jivin Jazz is going to have a successful website that can broadens people's appreciation of jazz. He especially focus on introducing jazz to younger people and also wants to get them enthused about it.</p>
+				</div>
+			</div>
+			<hr >
+			<div class="about_right">	
+			</div>
+
+			<div class="about_left">
+			</div>
+			<hr >
+			<div class="about_right">	
+					<div>
+						<p class="time">2016</p>
+					</div>
+					<div class="history">
+						<h1>OBJECTIVES</h1>
+						<p>The Jivin Jazz website now has about 1000 recordings, it is going to add 1000 recordings more in next year.</p>
+					</div>
+			</div>
+		</div>	
+	</div>	
+	<footer>
+		<div class="wrapper">
+			<div class="contact_address">130 Madras Street Christchurch Central 8011 New Zealand <br> 449144331@qq.com  |   021-2683008</div>
+			<ul class='wrapper_footer'>
+				<li><a href="http://www.facebook.com"><img src="images/footer/facebook.png" alt="Facebook" title="Facebook" ></a></li>
+				<li><a href="https://plus.google.com"><img src="images/footer/google.png" alt="Google+" title="Google+"></a></li>
+				<li><a href="https://www.instagram.com"><img src="images/footer/in.png" alt="Instagram" title="Instagram"></a></li>
+				<li><a href="https://twitter.com"><img src="images/footer/twitter.png" alt="Twitter" title="Twitter"></a></li>		
+			</ul>
+		</div>	
+		<div class="wrapper">
+			<p>&copy;Copyright 1999-2016 Power by <a href="">Ara</a>. All Rights Reserved.</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="">Privacy Policy</a>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<title>Jivin Jazz</title>
+	<link href="images/favicon/jivinjazz.ico" rel="icon" type="image/x-icon" />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css">
+	<link rel="stylesheet" href="css/responsive-nav.css">
+	<link rel="stylesheet" href="css/framework.css">
+	<link  rel="stylesheet" href="css/music.css">
+
+	
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/responsive-nav.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script>
+	    // The default label is the word "Menu". but we can use a special character to
+		// give us the "hamburger" icon.		
+	
+		$(function() {
+			var navigation = responsiveNav(".nav-collapse", {
+			insert: "before",
+			//label: "&#8801;"
+			label: "Menu"
+			});
+			$('.flexslider').flexslider({
+				slideshowSpeed: 3000,
+				animation: "slide"
+			});
+  
+			$('main figure').mouseout(function(){
+				
+				
+				$(this).children('figcaption').hide()
+				
+			})
+			$('main figure').mouseover(function(){
+				
+			//	$(this).children('cover').css('visibility', 'visible');
+				$(this).children('figcaption').show()
+				
+			})
+        });
+ 	</script>
+
+</head>
+
+<body>
+
+	<header>
+		<div class='wrapper'>
+			<div class='header_content'>
+				<a href="index.html"><img src='images/logo/logo2.png' alt='Jivin Jazz' title='Jivin Jazz'></a>
+				<h1>Jivin&nbsp;&nbsp;Jazz &nbsp;&nbsp;<span>since 1999</span></h1>	
+			</div>	
+			
+		</div>
+		<figure >
+				<a href='#'><img src="images/unlogin.png" ></img></a>
+				<figcaption>Login</figcaption>
+		</figure>
+	</header>
+	<nav class="nav-collapse">
+		<ul class='nav_link'>
+			<li><a href='index.html'>Home</a></li>
+			<li><a class='selected' href='music.html'>Music</a></li>
+			<li><a href='musician.html'>Musician</a></li>
+			<li><a href='blog.html'>Blog</a></li>
+			<li><a href='contact.html'>Contact us</a></li>
+			<li><a href='about.html'>About us</a></li>
+		</ul>
+	</nav>
+	<div id="content" class="" >
+
+		<div class="mapsite">
+				<div class="title">Hear what’s trending for free on charts</div>
+				<div class="input">
+
+					<div>
+						<input type="text" placeholder=" Search for recording "  class="inputText">
+					</div>
+					<div>	
+						<input type="button" value="Search" class="inputText_button" >
+					</div>
+				</div>
+
+		</div>
+	
+		
+
+		
+		<div class="music">
+			<main >
+				<figure style="background-image:url(images/cover/cover01.jpg); background-size:16em auto;">
+					<a href='#'><img name="cover" src="images/cover/cover.jpg" alt="cover" title="cover" ></img></a>
+					<figcaption><span>Standards Trio</span><br><span>938 views</span></figcaption>
+				</figure>
+				<figure style="background-image:url(images/cover/cover02.jpg); background-size:16em auto;">
+					<a href='#'><img name="cover" src="images/cover/cover.jpg" alt="cover" title="cover" ></img></a>
+					<figcaption><span>Trio Live In Japan 93</span><br><span>243 views</span></figcaption>
+				</figure>
+				<figure style="background-image:url(images/cover/cover03.jpg); background-size:16em auto;">
+					<a href='#'><img name="cover" src="images/cover/cover.jpg" alt="cover" title="cover" ></img></a>
+					<figcaption><span>Dominic J Marshall</span><br><span>977 views</span></figcaption>
+				</figure>
+				<figure class="alb" style="background-image:url(images/cover/cover04.jpg); background-size:16em auto;">
+					<a href='#'><img name="cover" src="images/cover/cover.jpg" alt="cover" title="cover" ></img></a>
+					<figcaption><span>Trio Standards 2</span><br><span>757 views</span></figcaption>
+				</figure>
+				<figure class="alb" style="background-image:url(images/cover/cover05.jpg); background-size:16em auto;">
+					<a href='#'><img name="cover" src="images/cover/cover.jpg" alt="cover" title="cover" ></img></a>
+					<figcaption><span>Standards Live'85</span><br><span>56 views</span></figcaption>
+				</figure>
+				<figure class="alb" style="background-image:url(images/cover/cover06.jpg); background-size:16em auto;">
+					<a href='#'><img name="cover" src="images/cover/cover.jpg" alt="cover" title="cover" ></img></a>
+					<figcaption><span>Piano Improvization-My Song</span><br><span>403 views</span></figcaption>
+				</figure>
+				<figure class="alb" style="background-image:url(images/cover/cover07.jpg); background-size:16em auto;">
+					<a href='#'><img name="cover" src="images/cover/cover.jpg" alt="cover" title="cover" ></img></a>
+					<figcaption><span>Pianoman PT</span><br><span>964 views</span></figcaption>
+				</figure>
+				<figure class="alb" style="background-image:url(images/cover/cover08.jpg); background-size:16em auto;">
+					<a href='#'><img name="cover" src="images/cover/cover.jpg" alt="cover" title="cover" ></img></a>
+					<figcaption><span>Tomasz Trzcinski</span><br><span>24 views</span></figcaption>
+				</figure>
+				<figure class="alb" style="background-image:url(images/cover/cover09.jpg); background-size:16em auto;">
+					<a href='#'><img name="cover" src="images/cover/cover.jpg" alt="cover" title="cover" ></img></a>
+					<figcaption><span>Bell Boyd</span><br><span>560 views</span></figcaption>
+				</figure>
+				<figure class="alb" style="background-image:url(images/cover/cover10.jpg); background-size:16em auto;">
+					<a href='#'><img name="cover" src="images/cover/cover.jpg" alt="cover" title="cover" ></img></a>
+					<figcaption><span>Solo Concert</span><br><span>983 views</span></figcaption>
+				</figure>
+				<figure class="alb" style="background-image:url(images/cover/cover11.jpg); background-size:16em auto;">
+					<a href='#'><img name="cover" src="images/cover/cover.jpg" alt="cover" title="cover" ></img></a>
+					<figcaption><span>A Chaves</span><br><span>324 views</span></figcaption>
+				</figure>
+				<figure class="alb" style="background-image:url(images/cover/cover12.jpg); background-size:16em auto;">
+					<a href='#'><img name="cover" src="images/cover/cover.jpg" alt="cover" title="cover" ></img></a>
+					<figcaption><span>God Bless The Child</span><br><span>340 views</span></figcaption>
+				</figure>
+			</main>
+
+			<aside>
+			<!--
+				<div class='musicianInfo'>
+					<h3>Keith Jarrett's Albumns</h3>
+					<p>Keith Jarrett is an American pianist and composer who performs both jazz and classical music. Jarrett started his career with Art Blakey, moving on to play with Charles Lloyd and Miles Davis.</p>
+					<br>
+					<p>Born: May 8, 1945 (age 71), Allentown, Pennsylvania, United States</p>
+					<p>Nationality: American</p>
+					<p>Spouse: Rose Anne Colavito (m. 1980–2010)</p>
+				</div>
+			-->
+				<div class="flexslider">
+				  <ul class="slides">
+				    <li>
+				     <figure name="info_cover" >
+						<a href='recording1.html'><img src="images/kj/live1.jpg" alt="Summertime" title="Summertime" ></img></a>
+						<figcaption>Summertime</figcaption>
+					</figure>
+				    <li>
+				      <figure name="cover" >
+						<a href='recording2.html'><img src="images/kj/live2.jpg" alt="Stockholms Konserthus" title="Stockholms Konserthus"></img></a>
+						<figcaption>Stockholms Konserthus</figcaption>
+					</figure>
+				    </li>
+				    <li>
+				     <figure name="cover" >
+						<a href='recording3.html'><img src="images/kj/live3.jpg" alt="My Back Pages" title="My Back Pages" ></img></a>
+						<figcaption>My Back Pages</figcaption>
+					</figure>
+				    </li>
+				  </ul>
+				</div>
+
+
+
+				<div class="albumn">
+					<figure name="info_cover" >
+						<a href='recording1.html'><img src="images/kj/live1.jpg" alt="Summertime" title="Summertime"></img></a>
+						<figcaption>Summertime</figcaption>
+					</figure>
+
+					<figure name="cover" >
+						<a href='recording2.html'><img src="images/kj/live2.jpg" alt="Stockholms Konserthus" title="Stockholms Konserthus"></img></a>
+						<figcaption>Stockholms Konserthus</figcaption>
+					</figure>
+
+					<figure name="cover" >
+						<a href='recording3.html'><img src="images/kj/live3.jpg" alt="My Back Pages" title="My Back Pages" ></img></a>
+						<figcaption>My Back Pages</figcaption>
+					</figure>
+				</div>
+			</aside>
+		</div>
+	</div>	
+	<footer>
+		<div class="wrapper">
+			<div class="contact_address">130 Madras Street Christchurch Central 8011 New Zealand <br> 449144331@qq.com  |   021-2683008</div>
+			<ul class='wrapper_footer'>
+				<li><a href="http://www.facebook.com"><img src="images/footer/facebook.png" alt="Facebook" title="Facebook" ></a></li>
+				<li><a href="https://plus.google.com"><img src="images/footer/google.png" alt="Google+" title="Google+"></a></li>
+				<li><a href="https://www.instagram.com"><img src="images/footer/in.png" alt="Instagram" title="Instagram"></a></li>
+				<li><a href="https://twitter.com"><img src="images/footer/twitter.png" alt="Twitter" title="Twitter"></a></li>		
+			</ul>
+		</div>	
+		<div class="wrapper">
+			<p>&copy;Copyright 1999-2016 Power by <a href="">Ara</a>. All Rights Reserved.</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="">Privacy Policy</a>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,147 @@
+body{
+	/*font-family: Georgia,'Roboto',arial,'Noto Sans Japanese',sans-serif;*/
+}
+
+#content {
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-image: url(../images/contact.jpg ) ;	
+	padding: 1em ;
+	font-family: Georgia,'Roboto',arial,'Noto Sans Japanese',sans-serif;
+}
+
+.contact {
+	border: solid 0px black;
+	display: flex;
+	width:70em;
+	height: 48em;
+	margin: 0 auto;
+	padding: auto;
+	background-color: #DD0;
+	filter:alpha(opacity=50);-moz-opacity:0.4;opacity:0.97; -khtml-opacity: 0.4;
+}
+
+aside {
+	flex-basis:25em;
+	margin:2em auto 1em auto;
+	border: solid 0px black;
+	padding: 1em ;
+}
+aside h1{
+	color:black;
+	margin: 0 auto 1em auto;
+}
+
+aside p{
+	line-height: 1.5em;
+	font-size: 1.2em;
+	font-family: "Courier New", Courier, monospace;
+	color: #333300;
+}
+main {
+	flex-basis:25em;
+	margin:2em auto;
+	border: solid 0px black;
+}
+
+main div{
+	display: flex;
+	width:20em;
+	height:5em;
+	margin: 0 auto;
+	padding: 0.3em;
+}
+/*.inputName{
+	margin: 0 1em 0 0;
+}
+
+.inputEmain{
+	margin: 0 0 0 1em;
+}*/
+label {
+	height:3em;
+	margin:2em auto;
+}
+
+.inputText{
+	font-family: Georgia,'Roboto',arial,'Noto Sans Japanese',sans-serif;
+	margin: 1em 0.5em;
+}
+
+.inputText_short{
+	width: 11em;
+	height: 3em;
+	flex-grow:1;
+}
+.inputText_long{
+	width: 24em;
+	height: 3em;
+	
+
+}
+
+.inputText_textarea{
+	width: 24em;
+	height: 12em;
+	margin: 1em auto;
+	resize:none;
+}
+.inputText_button{
+	background-color: black;
+	color:white;
+}
+.inputText_button:focus{    
+outline: none;
+box-shadow:0 0 30px grey; 
+} 
+
+@media screen and (max-width: 66em){
+	.contact{		
+		width :42em;
+		height: 100%;
+		margin: 2em auto;
+	}
+	.inputText_textarea {
+		width:20em;
+	}
+	main{
+		padding: 1em;
+		margin:  auto;
+	}
+	aside {
+		width: 20em;
+	}
+}
+
+@media screen and (max-width: 35em){
+
+	main div{
+		width: 100%;
+	}
+	#content{
+		width: 30em;
+		margin:0 auto;
+	}
+	.contact  {
+		width :26em;
+		height: 100%;
+		flex-direction: column;
+		}
+	main{
+		margin: 1em auto 0 auto;
+		
+		height: 100%;
+	}	
+	aside {
+		border-bottom: solid 1px black;
+	}
+	.inputText{
+		margin: 0 auto;
+		width:18em;
+	}
+	.inputText_textarea {
+		margin: 0 auto;
+		width:22em;
+	}
+}

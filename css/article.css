@@ -1,0 +1,24 @@
+
+
+#content {
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-image: url( images/contact.jpg ) ;	
+	margin: 0 auto ;
+	font-family: Georgia,'Roboto',arial,'Noto Sans Japanese',sans-serif;
+}
+
+.about{
+	width: 70em;
+	height: 40em;
+}
+
+@media screen and (max-width: 66em){
+	
+}
+
+@media screen and (max-width: 35em){
+
+	
+}

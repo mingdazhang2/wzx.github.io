@@ -1,0 +1,159 @@
+
+
+#content {
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	/*background-image: url( images/kj01.jpg ) ;	*/
+	margin: 0 auto ;
+	font-family: Georgia,'Roboto',arial,'Noto Sans Japanese',sans-serif;
+}
+.mapsite{
+	margin: 2em auto;
+	font-family: "Courier New", Courier, monospace;
+}
+p{ 
+	color: black;
+	font-family: "Courier New", Courier, monospace;
+}
+aside, main {
+	display: flex;
+	width: 70em;
+	margin: 1em auto;
+	border-top: 1px solid #aaa;
+}
+main figure {
+	display: flex;
+	flex-direction:column;
+	/*margin: 0.2em;*/
+	/*border-bottom: 1px solid black;*/
+}
+
+h3 {
+	margin: 1em auto;
+	text-align: left;
+}
+
+.history{
+	padding: 1.5em;
+	width: 52em;
+}
+.history_img{
+	width: 32em;
+	height: 22em;
+	float:right;
+}
+.hidden{
+	display: none;
+}
+
+.blog{
+	padding: 0.5em;
+	width: 70em;
+	height: 100%;
+	margin: 2em auto;
+	display: flex;
+	flex-direction: column;
+}
+.blog_wrapper {
+    display: flex;
+    width: 70em;
+    margin: 0 auto ;
+    padding: 0.8em;
+    /*flex-wrap:wrap;*/
+
+    }
+#content h1 {
+	color: black;
+	margin: 1em 0; 
+}
+
+.time {
+	width: 12em;
+	/*height: 26em; */
+	margin: 0.2em;
+	display: flex;
+	flex-direction:column;
+	/*border-bottom: 1px solid black;*/
+}
+
+.artical{
+	
+	height: 15em;
+	background-color: #eee;
+	overflow: hidden;
+	padding: 1em 3em 1em 3em;
+}
+.comment {
+	height: 3em;
+	background-color: #eee;
+	padding: 0 0 0 3em;
+	display: flex;
+}
+.comment span{
+
+}
+.icons {
+	width: 1.2em;
+	height: 1.2em;
+	margin: 0 0 0 0.5em;
+}
+.moreblog{
+	margin: 1em auto;
+	border: 1px solid #AAAAAA;
+	font-family: Georgia,'Roboto',arial,'Noto Sans Japanese',sans-serif;
+	width: 10em;
+	height: 2em;
+	text-align: center;
+	font-size: 2em;	
+	padding: 0.4em;
+}
+
+.moreblog span{
+	font-family: "Courier New", Courier, monospace;
+}
+
+main img, .artical, .comment{
+	width: 26em;
+}
+main img {
+	
+	height: 16em;
+	margin: 0 0.2em 0 0;
+}
+
+.headin{
+	padding-top: 2.5em;
+}
+@media screen and (max-width: 66em){
+	aside, main{
+		flex-direction:column;
+		/*margin: 0 auto;*/
+	}
+	#content, aside, main, .blog,.blog_wrapper {
+		width: 46em;
+	}
+	.headin, main img, .artical, .comment, .history {
+	width: 44em;
+	height: auto;
+	}
+	.icons{
+		padding: 0 0 1em 0;
+		height: 2em;
+	}
+}
+
+@media screen and (max-width: 38em){
+	#content, aside, main, .blog,.blog_wrapper {
+		width: 28em;
+	}
+	.headin, main img, .artical, .comment, .history{
+	width: 26em;
+	height: auto;
+
+	}
+	.history_img {
+		width: 14em;
+		height: 9em;
+	}
+}

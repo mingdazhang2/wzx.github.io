@@ -1,0 +1,340 @@
+
+
+#content {
+	margin: 0 auto ;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-image: url(../images/bk02.jpg ) ;	
+	
+	font-family: "Courier New", Courier, monospace;
+}
+.mapsite{
+	color: yellow;
+	flex-direction: column;
+	display: flex;
+	margin: 0 auto;
+	/*padding:0.5em 0 0 18em;*/
+	width: 32em;
+	text-align: center;
+}
+.mapsite span{
+
+	padding: 0.5em;
+}
+.input{
+	/*flex-grow:1;*/
+	display: flex;
+	margin: 0 auto;
+
+	/*width: 22em;*/
+}
+.inputText{
+	width: 44em;
+	height: 4em;
+	font-family: "Courier New", Courier, monospace;
+	margin: 1em 0em;
+	border: 1px solid #AAAAAA;
+}
+.inputText_button{
+	background-color: black;
+	color:white;
+	height: 4em;
+	width: 8em;
+	margin: 1em 0em;
+	font-family: "Courier New", Courier, monospace;
+	color: #ff5722;
+}
+.music{
+	width: 82em;
+	/*height: 58em;*/
+	margin: 1em auto 0 auto;
+	display: flex;
+	flex-direction:column;
+}
+.title {
+	width: 15.5em;
+	margin: 1em auto 1em auto;
+	color: black;
+	font-size: 2em;
+	/*padding: 1em;*/
+	/*font-weight: bold;*/
+	/*font-family: Georgia,'Roboto',arial,'Noto Sans Japanese',sans-serif;*/
+}
+.albumn{
+	display: flex;
+	margin: 0 auto;
+	width: 46em ;
+}
+
+cover {
+	display: none;
+}
+
+aside {
+	/*border-radius: 0.5em;*/
+	/*border: 1px solid white;*/
+	/*background-color: black;*/
+	/*margin: 0 auto;*/
+	order:1;
+	display: flex;
+	width: 100%;
+	height: 20em;
+	flex-direction:row;
+	color: #ff5722;
+	padding: 0.4em;
+	text-align: center;
+	
+}
+aside h3{
+	font-family: "Courier New", Courier, monospace;
+	color: black;
+	margin: 0 0 1em 0;
+}
+aside p{
+	text-align: left;
+}
+aside div {
+	margin: 0 auto;
+	width: 25em;
+	color: black;
+	/*background-color: #ff5722;*/
+}
+
+aside figure, figure img, aside figcaption{
+	
+	width: 13em;
+	height: 13em;
+	color:white;
+}
+.albumn figure{
+	margin: 2em 1em;
+	padding:  0 0;
+}
+
+aside figcaption {
+	
+	height: 2.5em;
+	position: relative;
+	top:-2.68em;
+	background-color:#5E6BA2;
+	filter:alpha(opacity=100);-moz-opacity:0.4;opacity:0.8; -khtml-opacity: 0.4;
+	color:white;
+	/*font-weight: bold;*/
+}
+
+main{
+	order:2;
+	margin: 2em auto 4em auto;
+	padding: 0 7em 7em 7em;
+	display: flex;
+	flex-wrap:wrap;
+	border-bottom: 1px solid #aaa;
+}
+
+main figure, main img{
+	width: 16em;
+	height: 15em;
+	/*padding: 0.2em;*/
+}
+main figure {
+	margin: 0.5em;
+}
+main img {
+	
+	visibility: visible;
+	padding: 3.5em;
+	/*filter:alpha(opacity=100);-moz-opacity:0.4;opacity:1; -khtml-opacity: 0.4;*/
+}
+main figcaption {
+	width: 16em;
+	height: 3.5em;
+	position: relative;
+	top:-3.8em;
+	background-color:black;
+	filter:alpha(opacity=100);-moz-opacity:0.4;opacity:0.8; -khtml-opacity: 0.4;
+	color:white;
+	display: none;
+	/*font-weight: bold;*/
+}
+
+.flexslider {
+	
+	display: none;
+}
+@media screen and (max-width: 66em){
+	.music{
+		width: 66em;
+	}
+
+	.mapsite{
+		width: 22em;
+	}
+	.inputText{
+		width: 32em;
+		height: 3em;
+		
+	}
+	.title {
+		width: 15.5em;
+		margin: 1em auto 1em auto;
+		font-size: 1em;
+	}
+	.inputText_button{
+		height: 3em;
+		width: 7em;
+		margin: 1em 0em;
+
+	}
+}
+
+@media screen and (max-width: 54em){
+
+	.music{
+		width: 38em;
+	}
+
+	.title {
+		width: 10.5em;
+		margin: 1em auto 1em auto;
+		color: black;
+		font-size: 1em;
+	}
+	main {
+		padding: 1em ;
+	}
+	.mapsite{
+		width: 22em;
+	}
+
+	.input{
+		width: 13em;
+		margin: 0 auto;
+	}
+	.inputText{
+		width: 20em;
+		height: 3em;
+		
+	}
+
+	.inputText_button{
+		height: 3em;
+		width: 5em;
+		margin: 1em 0em;
+
+	}
+
+	aside {
+		order:1;
+		flex-direction: column;
+		border-bottom: 1px solid grey;
+	}
+
+	.albumn {
+		width: 32em;
+	}	
+		
+	.albumn figure{
+		margin: 0 auto;
+		padding: 0;
+
+	}
+
+	aside figure,aside img{
+		width: 10em;
+		height:10em;
+	}
+	figure img {
+		
+	}
+	aside figcaption{
+		width: 10em;
+		
+	}
+	aside p{
+		display: none;
+	}
+
+	main{
+		order:2;
+		border-bottom: 0px;
+	}
+	main figure{
+		margin: 0 auto;
+	}
+}
+
+
+
+@media screen and (max-width: 35em){
+	.mapsite {
+		width: 14em;
+	}
+	.title {
+		width:14em;
+		
+	}
+	.input {
+		width:12em;
+	}
+	
+	.inputText{
+		width:18em;
+		height: 3em;
+		
+	}
+
+	.inputText_button{
+		height: 3em;
+		width: 5em;
+		margin: 1em 0em;
+
+	}
+	.music {
+		width: 30em;
+	}
+	aside {
+		height: 25em;
+	}
+	aside h3{
+		margin: 0 auto;
+	}
+	aside, .musicianInfo{
+		width: 16.58em;
+
+		margin: 0 auto;
+	}
+	.albumn {
+		display: none;
+		flex-direction: column;
+		width: 18em;
+		margin: 0 auto;
+	}
+
+
+	aside figcaption{
+		width: 15em;
+		
+	}
+	aside figure, aside div, figure img, .flexslider, .slides {
+		width: 15em;
+		height: 15em;
+		
+	}
+	.flexslider {
+
+		display: block;
+	}
+
+	main{
+		margin: 2em auto 0 auto;
+		padding: 0 auto;
+		width: 30em;
+	}
+	main figure{
+		margin: 0 auto;
+	}
+	.alb {
+		display: none;
+	}
+}

@@ -1,0 +1,96 @@
+
+
+#content {
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-image: url(../images/bk01.jpg ) ;	
+	margin: 0 auto ;
+	font-family: Georgia,'Roboto',arial,'Noto Sans Japanese',sans-serif;
+}
+hr {
+	margin: 0 2em;
+	size:auto;
+	/*width:1;*/
+	border: 1px solid yellow;
+}
+.about{
+	margin: 0 auto;
+	padding: 3em;
+	display: flex;
+	width: 70em;
+	height: 60em;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+.mapsite{
+	padding: 2em 0;
+
+	color: yellow;
+	font-family: "Courier New", Courier, monospace;
+}
+
+.time {
+	font-family: "Courier New", Courier, monospace; 
+	font-size: 3em;
+	color: yellow;
+}
+
+.history h1	{
+	color: #FFFFEE;
+	margin: 1em auto;
+}
+
+.history p {
+	font-family: monospace; 
+	font-size: 1.5em;
+	color: white;
+	line-height: 1.5em;
+}
+
+.about_left{
+	flex-basis:26em;
+	/*border-right: yellow 0.1em solid;*/
+	margin: 0 2em 0 0;
+	text-align: right;
+}
+
+.about_right{
+	flex-basis:26em;
+	/*border-left: yellow 0.1em solid;*/
+	margin: 0 0 0 2em;
+	text-align: left;
+}
+
+@media screen and (max-width: 66em){
+	.about {
+		width: 44em;
+		height: 80em;
+		flex-wrap:none;
+	}
+	.about_left,.about_right{
+		flex-basis:14em;
+	}
+}
+
+
+
+
+@media screen and (max-width: 35em){
+	.about {
+		width: 20em;
+		height: 70em;
+		border-top: 1px solid white;
+	}
+	hr {
+		border: none;
+	}
+	.time {
+		text-align: center;
+	}
+	.about_left,.about_right {
+		text-align: left;
+		margin: 0 auto;
+	}
+	
+}

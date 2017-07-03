@@ -1,0 +1,106 @@
+
+/*figure {
+	background-color:#c1c1c1 ;
+	border: 1px grey solid;
+	border-radius:0.5em;
+	}*/
+	
+
+		
+/* Layout */
+#main_content p{
+	color:white;
+	}
+
+#content {
+	display: flex;
+	width: 100%;
+	
+	background-size: cover;
+	background-image: url( ../images/kj_home.jpg ) ;	
+	margin: 0 auto ;
+}
+#content,#main_cover,#main_content {
+	height: 50em;
+}
+aside {
+	flex-grow:3;
+}
+
+main {
+	flex-grow:1;
+}
+
+#main_cover{
+	width: 100%;
+	margin-right: 0;
+	
+	background-size: cover;
+	background-image:url(../images/home_black.jpg);
+	filter:alpha(opacity=50);-moz-opacity:0.4;opacity:0.5; -khtml-opacity: 0.4;
+}
+#main_content {
+	position: relative;
+	margin-top:-50em; 
+	width: 50em; 
+	
+	overflow:hidden;
+}
+
+#main_content p{
+	margin: 0 5em;
+	font-size: 1.3em;
+	line-height: 1.7em;
+	font-family: "Courier New", Courier, monospace;
+	/*font-family:Verdana,sans-serif,Helvetica,Arial;*/
+}
+
+#main_content {
+	padding: 4em;
+}
+
+ 		
+/*media*/
+
+@media screen and (max-width:66em) {
+	
+	
+	#content {
+		flex-direction: column;
+		}	
+	aside {
+		display:hidden;
+		}
+	#main_cover{
+		width: 100%;
+	}	
+	#main_content{
+		width: 100%;
+	}
+
+	main {
+		order:1;
+		flex-basis: 30em;
+		}	
+		
+	/*.wrapper_footer{
+		flex-direction: row;	
+	}*/
+	
+@media screen and (max-width:35em) {
+
+	#main_content p	{
+		margin: 1em 1em;
+	}
+	
+	aside {
+		display:none;
+	}
+		
+	/*main {
+		
+		order:2;
+		flex-basis: 30em;
+		}	
+	}*/
+	

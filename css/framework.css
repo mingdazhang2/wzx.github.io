@@ -1,0 +1,324 @@
+/* RESET */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    /* Cancel out some differences between browser defaults */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+ 
+* {
+    /* The width of an element will be the size of its border box, not its content box (which is the normal default). */
+    box-sizing: border-box;
+}
+
+main { 
+    /* Make sure the browser knows how to display the HTML5 main element. */
+    display: block;
+}
+
+body {
+    font-family: calluna,Verdana,Arial,sans-serif;
+    color: grey;
+    font-size: 0.8em;
+    }
+main {
+    color: #444444;     
+    }   
+.standard {
+    font-style: italic;
+    font-family: Georgia;
+    font-size: 1.7em;
+    color: yellow;
+    }
+h1 {
+    color: white;
+    font-family: Georgia;
+    font-size: 2em;
+    }
+h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.7em;
+    margin:2em;
+    text-align: center;
+    } 
+h1 span{
+    color: white;
+    font-size: 0.7em;
+}    
+h3 {
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    } 
+
+header {
+    background-color: #000000;
+    }
+header figure {
+    display: flex;
+    flex-direction:column;
+    position:absolute;
+    top:2em; 
+    right:2em; 
+    font-family: "Courier New", Courier, monospace;
+}
+figure a,header figure img{
+    width:2.2em; 
+    height:2.2em; 
+    margin: 0 auto;
+    /*flex-basis:1em;*/
+}
+/*figcaption{
+    flex-basis:1em;
+    margin:auto;
+    
+    text-align: center;
+}*/
+
+
+header a{
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1em;
+}
+    
+footer {
+    background-color: #999999;  
+    padding: 2em 6em;
+    }
+    
+nav a   {
+    color: white;
+    text-decoration: none;
+    }
+
+footer a{
+    color:#444444;
+    text-decoration: none;
+    }   
+nav a:hover,  .selected{
+    color:yellow;
+    }
+footer a:hover {
+    color: #BE540E;
+}   
+    
+nav li, footer li, nav ul, footer ul {
+    list-style-type: none;
+    color: white;
+    }   
+.header_content img{
+    width:5.5em;
+    height: 4.5em;
+}
+.header_content h1{
+    margin: auto;
+}
+.header_content{
+    display: flex;
+    flex-basis:35em;
+    padding: 1em;
+    margin: 1em auto;
+}
+
+.mapsite {
+    text-align: center;
+    /*color:yellow;*/
+    font-size: 2em;
+    font-weight: 100;
+    margin: 0 auto 0 auto;
+    padding:1em auto;
+    /*background-color: black;  */  
+}
+.nav_link {
+    display: flex;
+    flex-direction: row;
+    flex-basis:25em;
+    background-color: black;
+    text-align: center;
+
+}
+.nav_link li{
+    margin: auto;
+
+}
+footer img {
+    width: 3em;
+    height: 3em;
+}
+.contact_address {
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+    font-size: 1.2em;
+    flex-grow: 1;
+    width: 70em;
+    margin: 0 auto;
+}
+.wrapper {
+    display: flex;
+    width: 70em;
+    margin: 0 auto ;
+    }
+.wrapper p{
+    color: #444444;
+}   
+
+.wrapper_footer{
+    display: flex;
+    margin: 1em auto ;
+    }   
+nav a, footer ul a{
+    margin: 1em ;
+}
+
+nav {
+    /*padding: 1em;
+    margin:auto 0;*/
+}
+#copyright {
+    display: flex;
+    flex-direction:column;
+    width: 70em;
+    margin: 2em auto 0 auto ;
+    color:#444444;
+    line-height: 1.7em;
+}  
+.nav-collapse {
+     font-family: "Courier New", Courier, monospace;
+     margin: 0 auto;
+   
+}
+.nav-collapse ul {
+    width: 70em;
+   
+}
+
+.nav-collapse ul,.nav-collapse, .nav-toggle {
+     background-color: #1d1b1c;
+}
+input,textarea {    
+background: #fff;
+border: none;/*box-shadow:0 0 5px #ccc; */
+} 
+input:focus,textarea:focus {    
+outline: none;
+box-shadow:0 0 5px grey; 
+} 
+    .nav-collapse li {
+    /* This needs to be a very specific selector to override the CSS in the other file */
+    padding: 0.5em 0;
+}
+    .nav-toggle {
+        /* I've used absolute positioning. The demo uses float: right - you can't mix both approaches.
+           Absolute positioning is technically the proper method. */
+        /*
+        position: absolute;
+        top: 0;
+        right: 0.5em;
+        */
+        
+        width: 100%;
+        font-size: 1.4em; /* This size is for the text character used for the hamburger "icon". See the HTML. */
+        text-decoration: none;
+        color: #ff5722;
+        font-family: "Courier New", Courier, monospace;
+        margin: 0 auto;
+        padding: 0.2em;
+        text-align: center;
+        display: block;
+    }
+@media screen and (max-width: 66em){
+    .wrapper {
+        width :32em;
+        flex-direction: column;
+        }
+    .header_content {
+        flex-direction: row;
+        margin: 0 auto;
+        flex-basis:7em;     
+    }
+    .header_content h1{
+        margin: 0.6em auto;
+        padding: 0 0.2em;
+    }
+    nav{
+        margin: 0 auto;
+    }
+    .contact_address{
+        width: 100%;
+    }
+
+    h1 {
+        margin-right: 2em; /* Leave space for the hamburger icon (try zooming in) */
+    }
+    
+
+
+     .nav-collapse ul {
+        width: 52em;
+    }
+}
+
+@media screen and (max-width:35em) {
+
+    .nav-collapse ul {
+        width: 20em;
+        margin: 0 auto;
+    }
+    .nav_link {
+        flex-direction:column;
+        margin: 0 auto;
+    }
+    .wrapper {
+        width :20em;
+        flex-direction: column;
+        }
+    nav li{
+    margin: 0.5em 0;
+    }
+    .wrapper_footer{
+    margin: 1em -1em ;
+    } 
+}
+
+
+
+/*  The media query for switching to/from the mobile menu is in the responsive-nav.css file,
+    but I have commented it out there and recreated it below with a different break point
+    (34em).   */
+
+@media screen and (min-width: 44em) {
+
+    
+    .js .nav-collapse {
+        position: relative;
+    }
+    
+    .js .nav-collapse.closed {
+        max-height: none;
+    }
+    
+    .nav-toggle {
+        display: none;
+    }
+        
+    .nav-collapse ul {
+        /* Make the menu items appear in a horizontal line. */
+        display: flex;
+       
+        margin: 0.8em auto;
+    }
+
+}
+/*input:focus{
+
+border-color:#5DC34A ;
+
+outline:5px glow #5DC34A -1px;
+
+transition: outline(linear,0.25s) border-color(linear,0.25s);
+}*/

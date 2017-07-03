@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<title>Jivin Jazz</title>
+	<link href="images/favicon/jivinjazz.ico" rel="icon" type="image/x-icon" />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css">
+	<link rel="stylesheet" href="css/responsive-nav.css">
+	<link rel="stylesheet" href="css/framework.css">
+	<link  rel="stylesheet" href="css/musician.css">
+
+	
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/responsive-nav.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script>
+	    // The default label is the word "Menu". but we can use a special character to
+		// give us the "hamburger" icon.		
+	
+		$(function() {
+			var navigation = responsiveNav(".nav-collapse", {
+			insert: "before",
+			//label: "&#8801;"
+			label: "Menu"
+			});
+			$('.flexslider').flexslider({
+				slideshowSpeed: 3000,
+				animation: "slide"
+			});
+		});
+ 	</script>
+
+</head>
+
+<body>
+
+	<header>
+		<div class='wrapper'>
+			<div class='header_content'>
+				<a href="index.html"><img src='images/logo/logo2.png' alt='Jivin Jazz' title='Jivin Jazz'></a>
+				<h1>Jivin&nbsp;&nbsp;Jazz &nbsp;&nbsp;<span>since 1999</span></h1>	
+			</div>	
+			
+		</div>
+		<figure >
+				<a href='#'><img src="images/unlogin.png" ></img></a>
+				<figcaption>Login</figcaption>
+		</figure>
+	</header>
+	<nav class="nav-collapse">
+		<ul class='nav_link'>
+			<li><a href='index.html'>Home</a></li>
+			<li><a href='music.html'>Music</a></li>
+			<li><a class='selected' href='musician.html'>Musician</a></li>
+			<li><a href='blog.html'>Blog</a></li>
+			<li><a href='contact.html'>Contact us</a></li>
+			<li><a href='about.html'>About us</a></li>
+		</ul>
+	</nav>
+	<div id="content" class="" >
+			
+			<main>
+				<h1>Keith Jarrett</h1>
+				<div class='musicianInfo'>
+					<p>Keith Jarrett (born May 8, 1945) is an American pianist and composer who performs both jazz and classical music.
+
+						Jarrett started his career with Art Blakey, moving on to play with Charles Lloyd and Miles Davis. Since the early 1970s he has enjoyed a great deal of success as a group leader and a solo performer in jazz, jazz fusion, and classical music. His improvisations draw from the traditions of jazz and other genres, especially Western classical music, gospel, blues, and ethnic folk music.
+
+						In 2003, Jarrett received the Polar Music Prize, the first (and to this day only) recipient not to share the prize with a co-recipient, and in 2004 he received the Léonie Sonning Music Prize.
+
+						In 2008, he was inducted into the Down Beat Hall of Fame in the magazine's 73rd Annual Readers' Poll.
+					</p>
+					<div id="profile">
+						<img  src="images/kj/profile.jpg" title="Keith Jarrett" alt="Keith Jarrett"></img>
+						<div id="bk">
+							<p>Born: May 8, 1945 (age 71), Allentown, Pennsylvania, United States</p>
+							<p>Nationality: American</p>
+							<p>Spouse: Rose Anne Colavito (m. 1980–2010)</p>
+						</div>
+					</div>
+				</div>
+				<h1>Solo piano</h1>
+					<p id='piano'><img src="images/kj05.jpg" title="Keith Jarrett" alt="Keith Jarrett"></img>
+					Jarrett recorded a few solo pieces live under the guidance of Miles Davis at Washington's music club The Cellar Door in December 1970. These were done on electric pianos (Rhodes and Contempo), which Jarrett was loath to perform on. Most parts of these recorded sets were released in 2007 on The Cellar Door Sessions featuring four improvisations by Jarrett.
+
+Jarrett's first album for ECM, Facing You (1971), was a solo piano date recorded in the studio. He has continued to record solo piano albums in the studio intermittently throughout his career, including Staircase (1976), Invocations/The Moth and the Flame (1981), and The Melody at Night, with You (1999). Book of Ways (1986) is a studio recording of clavichord solos.
+
+The studio albums are modestly successful entries in the Jarrett catalog, but in 1973, Jarrett also began playing totally improvised solo concerts, and it is the popularity of these voluminous concert recordings that made him one of the best-selling jazz artists in history. Albums released from these concerts were Solo Concerts: Bremen/Lausanne (1973), to which Time magazine gave its 'Jazz Album of the Year' award; The Köln Concert (1975), which became the best-selling piano recording in history; and Sun Bear Concerts (1976) – a 10-LP (and later 6-CD) box set.
+</p>
+			</main>
+			<aside>
+				
+			</aside>
+
+		
+	</div>	
+	<footer>
+		<div class="wrapper">
+			<div class="contact_address">130 Madras Street Christchurch Central 8011 New Zealand <br> 449144331@qq.com  |   021-2683008</div>
+			<ul class='wrapper_footer'>
+				<li><a href="http://www.facebook.com"><img src="images/footer/facebook.png" alt="Facebook" title="Facebook" ></a></li>
+				<li><a href="https://plus.google.com"><img src="images/footer/google.png" alt="Google+" title="Google+"></a></li>
+				<li><a href="https://www.instagram.com"><img src="images/footer/in.png" alt="Instagram" title="Instagram"></a></li>
+				<li><a href="https://twitter.com"><img src="images/footer/twitter.png" alt="Twitter" title="Twitter"></a></li>		
+			</ul>
+		</div>	
+		<div class="wrapper">
+			<p>&copy;Copyright 1999-2016 Power by <a href="">Ara</a>. All Rights Reserved.</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="">Privacy Policy</a>
+		</div>
+	</footer>
+</body>
+</html>
